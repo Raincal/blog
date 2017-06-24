@@ -1,6 +1,8 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": "CNAME"
+    "ignore": [
+      "CNAME"
+    ]
   }
 }
