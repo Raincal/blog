@@ -140,28 +140,8 @@ nginx successfully reloaded.
 
 完成后访问外网IP 52.80.37.119，本地环境的话访问 localhost 开始安装 flarum
 
-**Admin Password 需要大于8位**
+**管理员密码需要大于8位**
 
-![screencapture-52-80-37-119-1502067797825.png](https://i.loli.net/2017/08/07/5987e11574b7b.png)
+![screencapture-joudo-tk-1502095912645.png](https://ooo.0o0.ooo/2017/08/07/59882ebce3203.png)
 
-![screencapture-52-80-37-119-1502068234041.png](https://i.loli.net/2017/08/07/5987e1155c495.png)
-
-## 安装后的问题
-
-### 进入我的资料 会报错
-
-解决方法：
-
-进入后台 插件拓展
-
-![深度截图_选择区域_20170807093308.png](https://i.loli.net/2017/08/07/5987e115ade24.png)
-
-设置 Money 或者 禁用这个插件
-
-![深度截图_选择区域_20170807092003.png](https://i.loli.net/2017/08/07/5987e1155c2a6.png)
-
-### 发帖会报错
-
-进入后台 插件拓展，禁用 Flagrow Byōbu
-
-![深度截图_选择区域_20170807100512.png](https://i.loli.net/2017/08/07/5987e115a543c.png)
+![screencapture-54-222-128-207-1502096436141.png](https://ooo.0o0.ooo/2017/08/07/59882ebd28ba8.png)
