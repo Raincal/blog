@@ -15,7 +15,7 @@ http://get.daocloud.io/#install-docker
 
 路径：自有主机 -> 集群管理 -> 添加主机
 
-![Markdown](http://i1.bvimg.com/603694/e7db6f25ad0b595a.png)
+![深度截图_选择区域_20170807083400.png](https://i.loli.net/2017/08/07/5987e1158c3a8.png)
 
 <!-- more -->
 
@@ -109,7 +109,7 @@ nginx:
 
 若使用胶囊主机，可以到 自有主机 -> Stack -> 创建新 Stack
 
-![Markdown](http://i2.bvimg.com/603694/c652ec0fab9b0dbb.png)
+![深度截图_选择区域_20170807084450.png](https://i.loli.net/2017/08/07/5987e1158bc73.png)
 
 ### 设置 nginx 反向代理
 
@@ -117,7 +117,7 @@ nginx:
 
 `ssh ubuntu@52.80.37.119`
 
-![Markdown](http://i2.bvimg.com/603694/19e683c9f0698f70.png)
+![深度截图_选择区域_20170807093749.png](https://i.loli.net/2017/08/07/5987e115741b5.png)
 
 ```sh
 docker exec -it nginx ngxproxy
@@ -142,9 +142,9 @@ nginx successfully reloaded.
 
 **Admin Password 需要大于8位**
 
-![Markdown](http://i4.bvimg.com/603694/51684143a6096072.png)
+![screencapture-52-80-37-119-1502067797825.png](https://i.loli.net/2017/08/07/5987e11574b7b.png)
 
-![Markdown](http://i2.bvimg.com/603694/d4ae12179e79fcf5.png)
+![screencapture-52-80-37-119-1502068234041.png](https://i.loli.net/2017/08/07/5987e1155c495.png)
 
 ## 安装后的问题
 
@@ -153,13 +153,15 @@ nginx successfully reloaded.
 解决方法：
 
 进入后台 插件拓展
-![Markdown](http://i2.bvimg.com/603694/4f41b6ca158ef6b4.png)
+
+![深度截图_选择区域_20170807093308.png](https://i.loli.net/2017/08/07/5987e115ade24.png)
+
 设置 Money 或者 禁用这个插件
 
-![Markdown](http://i2.bvimg.com/603694/71d3eedb7a2351ea.png)
+![深度截图_选择区域_20170807092003.png](https://i.loli.net/2017/08/07/5987e1155c2a6.png)
 
 ### 发帖会报错
 
 进入后台 插件拓展，禁用 Flagrow Byōbu
 
-![Markdown](http://i2.bvimg.com/603694/56045580a5a49626.png)
+![深度截图_选择区域_20170807100512.png](https://i.loli.net/2017/08/07/5987e115a543c.png)
