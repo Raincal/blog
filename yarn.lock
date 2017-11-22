@@ -808,6 +808,14 @@ hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
+hexo-bunyan@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/hexo-bunyan/download/hexo-bunyan-1.0.0.tgz#b2106b26547b232f0195db863cb5d5ff8527fd36"
+  optionalDependencies:
+    moment "^2.10.6"
+    mv "~2"
+    safe-json-stringify "~1"
+
 hexo-cli@^1.0.2:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/hexo-cli/download/hexo-cli-1.0.3.tgz#64aa13eda34a0261dc339171e07ad131ef610ac7"
@@ -850,9 +858,9 @@ hexo-fs@^0.2.0:
     escape-string-regexp "^1.0.5"
     graceful-fs "^4.1.4"
 
-hexo-generator-archive@^0.1.4:
-  version "0.1.4"
-  resolved "http://registry.npm.taobao.org/hexo-generator-archive/download/hexo-generator-archive-0.1.4.tgz#16df76ec9187e510dff6c192204b0f7f7c506069"
+hexo-generator-archive@^0.1.5:
+  version "0.1.5"
+  resolved "http://registry.npm.taobao.org/hexo-generator-archive/download/hexo-generator-archive-0.1.5.tgz#a979214cdddee2693e0551809c294bedadbb69b3"
   dependencies:
     hexo-pagination "0.0.2"
     object-assign "^2.0.0"
@@ -914,6 +922,13 @@ hexo-log@^0.1.2:
     bunyan "^1.5.1"
     chalk "^1.1.1"
 
+hexo-log@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.taobao.org/hexo-log/download/hexo-log-0.2.0.tgz#d30fd45e1a12a83c88033586640485efc5df5a6f"
+  dependencies:
+    chalk "^1.1.1"
+    hexo-bunyan "^1.0.0"
+
 hexo-pagination@0.0.2:
   version "0.0.2"
   resolved "http://registry.npm.taobao.org/hexo-pagination/download/hexo-pagination-0.0.2.tgz#8cf470c7db0de5b18a3926a76deb194015df7f2b"
@@ -968,9 +983,9 @@ hexo-util@^0.6.0:
     html-entities "^1.2.0"
     striptags "^2.1.1"
 
-hexo@^3.3.9:
-  version "3.3.9"
-  resolved "http://registry.npm.taobao.org/hexo/download/hexo-3.3.9.tgz#9c1503ebef509987fb3c2a36cf8249419e25e6ef"
+hexo@^3.4.1:
+  version "3.4.1"
+  resolved "http://registry.npm.taobao.org/hexo/download/hexo-3.4.1.tgz#343c0a7f910349fc2f7aca679c5338de04988b04"
   dependencies:
     abbrev "^1.0.7"
     archy "^1.0.0"
@@ -982,7 +997,7 @@ hexo@^3.3.9:
     hexo-front-matter "^0.2.2"
     hexo-fs "^0.2.0"
     hexo-i18n "^0.2.1"
-    hexo-log "^0.1.2"
+    hexo-log "^0.2.0"
     hexo-util "^0.6.0"
     js-yaml "^3.6.1"
     lodash "^4.13.1"
