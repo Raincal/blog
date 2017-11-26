@@ -1,7 +1,8 @@
-# robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
 
 Disallow: /vendors/
 Disallow: /js/
@@ -11,3 +12,4 @@ Disallow: /lib/
 Disallow: /fancybox/
 
 Sitemap: https://raincal.top/sitemap.xml
+Sitemap: https://raincal.top/baidusitemap.xml

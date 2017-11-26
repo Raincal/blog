@@ -5,7 +5,7 @@
 # Site
 title: Raincal's Blog
 subtitle:
-description:
+description: 博客 | web开发
 author: Raincal
 language: zh-Hans
 timezone:
@@ -66,6 +66,12 @@ pagination_dir: page
 theme: next
 
 avatar: /images/avatar.jpg
+
+# Sitemap
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
