@@ -974,9 +974,9 @@ hexo-renderer-stylus@^0.3.3:
     nib "^1.1.2"
     stylus "^0.54.5"
 
-hexo-server@^0.2.2:
-  version "0.2.2"
-  resolved "http://registry.npm.taobao.org/hexo-server/download/hexo-server-0.2.2.tgz#592686b554b8bfe09a19bc86c0f003ac3e8c19b9"
+hexo-server@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/hexo-server/-/hexo-server-0.3.0.tgz#95aa8958afdd1fefe87604c5e39d23f64cdc43a6"
   dependencies:
     bluebird "^3.0.6"
     chalk "^1.1.1"
