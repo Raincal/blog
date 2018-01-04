@@ -1,14 +1,14 @@
 sudo: false
 language: node_js
 node_js:
-- '8'
+- '9'
 
 install:
 - yarn
 - yarn global add hexo-cli
 
 script:
-- hexo g
+- hexo g --config source/_data/next.yml
 - hexo d
 - rm -rf ~/.ssh
 
