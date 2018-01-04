@@ -5,4 +5,6 @@ tags: [picture]
 type: "picture"
 ---
 
-<img src="https://ooo.0o0.ooo/2017/12/31/5a4902c63fb80.jpg" class="full-image" />
+{% gp 2-1 %}
+![hello2018.jpg](https://ooo.0o0.ooo/2017/12/31/5a4902c63fb80.jpg)
+{% endgp %}
