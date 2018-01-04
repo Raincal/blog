@@ -1,5 +1,6 @@
 ---
 title: grub rescue模式下修复Linux引导
+urlname: grub-rescue
 date: 2017-11-22 16:29:39
 tags: [Linux, grub, Arch]
 categories: [Linux]

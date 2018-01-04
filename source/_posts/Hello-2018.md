@@ -1,5 +1,6 @@
 ---
 title: Hello 2018
+urlname: Hello-2018
 date: 2018-01-01 00:00:00
 tags: [picture]
 type: "picture"

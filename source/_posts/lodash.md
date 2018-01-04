@@ -1,5 +1,6 @@
 ---
 title: 10 个可用 ES6 替代的 Lodash 特性
+urlname: lodash
 date: 2016-06-30 21:02:10
 tags: lodash
 ---

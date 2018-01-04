@@ -1,5 +1,6 @@
 ---
 title: MSBuildTour
+urlname: ms-build-tour
 date: 2017-06-06 14:39:27
 tags: [picture,microsoft]
 type: "picture"

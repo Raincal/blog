@@ -1,4 +1,6 @@
+---
 title: mongoDB常用命令
+urlname: mongodb-command
 date: 2015-07-10 16:47:56
 tags: mongoDB
 categories: mongoDB

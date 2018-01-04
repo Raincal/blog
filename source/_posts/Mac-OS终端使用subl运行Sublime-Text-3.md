@@ -1,4 +1,6 @@
+---
 title: Mac OS终端使用subl运行Sublime Text 3
+urlname: launch-sublime-text-from-command-line
 date: 2015-05-09 05:49:56
 tags:
 ---
