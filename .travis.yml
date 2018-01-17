@@ -8,7 +8,7 @@ install:
 - yarn global add hexo-cli
 
 script:
-- hexo g --config source/_data/next.yml
+- hexo g
 - hexo d
 - rm -rf ~/.ssh
 
