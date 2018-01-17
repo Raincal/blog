@@ -1,4 +1,4 @@
-[submodule "themes/next-reloaded"]
-	path = themes/next-reloaded
+[submodule "themes/next"]
+	path = themes/next
 	url = https://github.com/Raincal/hexo-theme-next
 	branch = me
