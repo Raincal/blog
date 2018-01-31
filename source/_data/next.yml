@@ -70,12 +70,17 @@ social:
   Twitter: https://twitter.com/cyj228 || twitter
   Weibo: https://weibo.com/cyj228 || weibo
   Facebook: https://www.facebook.com/cyj228 || facebook
+  Telegram: https://t.me/Raincal || telegram
   E-Mail: mailto:cyj94228@gmail.com || envelope
 
 social_icons:
   enable: true
   icons_only: true
   transition: true
+  # Dependencies: exturl: true in Tags Settings section below.
+  # To encrypt links above use https://www.base64encode.org
+  # Example encoded link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`
+  exturl: false
 
   # Follow me on GitHub banner in right-top corner.
 # Usage: `permalink || title`
@@ -145,8 +150,7 @@ sidebar:
 # Declare license on posts
 post_copyright:
   enable: true
-  license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  license: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -248,9 +252,6 @@ busuanzi_count:
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: true
-
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
@@ -260,7 +261,8 @@ local_search:
   trigger: auto
   # show top n results per article, show all results by setting to -1
   top_n_per_article: 1
-
+  # unescape html strings to the readable one
+  unescape: false
 
 # Fancybox. There is support for old version 2 and new version 3.
 # Please, choose only any one variant, do not need to install both.
