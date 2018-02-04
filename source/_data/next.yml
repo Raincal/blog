@@ -215,7 +215,7 @@ font:
 disqusapi:
   enable: true
   forum: 'raincal'
-  site: 'https://raincal.top'
+  site: 'https://raincal.com'
   api: 'https://raincal-blog-disqus.now.sh/api'
   mode: 3
   badge: '博主'
@@ -234,23 +234,7 @@ leancloud_visitors:
   enable: true
   app_id: xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz
   app_key: TgK8LqquaVhiY6lmrw6U8zcW
-# Show PV/UV of the website/page with busuanzi.
-# Get more information on http://ibruce.info/2015/04/04/busuanzi/
-busuanzi_count:
-  # count values only if the other configs are false
-  enable: true
-  # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
-  # custom pv span for the whole site
-  site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
-  # custom pv span for one page only
-  page_pv: false
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+
 
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
@@ -366,7 +350,19 @@ vendors:
 
   # needMoreShare2
   # https://github.com/revir/need-more-share2
-  needMoreShare2:
+  needmoreshare2_js:
+    needmoreshare2_css:
+  
+    # bookmark
+    # Internal version: 1.0.0
+    # https://github.com/theme-next/theme-next-bookmark
+    bookmark:
+  
+    # reading_progress
+    # Internal version: 1.0
+    # https://github.com/theme-next/theme-next-reading-progress
+    # Example: https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
+    reading_progress:
 
   # disqus-php-api
   # https://github.com/Raincal/disqus-php-api
