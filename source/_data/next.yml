@@ -235,6 +235,27 @@ leancloud_visitors:
   app_id: xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz
   app_key: TgK8LqquaVhiY6lmrw6U8zcW
 
+# Show PV/UV of the website/page with busuanzi.
+# Get more information on http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  # count values only if the other configs are false
+  enable: true
+  # fix PV/UV when change domain
+  uv_offset: 1230
+  pv_offset: 8166
+  # custom uv span for the whole site
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
+  # custom pv span for the whole site
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_footer:
+  # custom pv span for one page only
+  page_pv: false
+  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_footer:
+
 
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
