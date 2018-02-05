@@ -1,5 +1,5 @@
 # Set default keywords (Use a comma to separate)
-keywords: "Raincal, Blog, React, React-Native, Angular, VSCode, Elixir"
+keywords: "Raincal, Blog, React, React-Native, Angular, Elixir"
 
 footer:
   # Specify the date when the site was setup.
@@ -150,7 +150,7 @@ sidebar:
 # Declare license on posts
 post_copyright:
   enable: true
-  license: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a>
+  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noopener" target="_blank">CC BY-NC-SA 4.0</a>
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -269,7 +269,26 @@ local_search:
   # unescape html strings to the readable one
   unescape: false
 
-# Fancybox. There is support for old version 2 and new version 3.
+# Use velocity to animate everything.
+motion:
+  enable: true
+  async: true
+  transition:
+    # Transition variants:
+    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
+    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
+    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
+    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
+    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
+    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    post_block: fadeIn
+    post_header: slideDownIn
+    post_body: slideDownIn
+    coll_header: slideLeftIn
+    # Only for Pisces | Gemini.
+    sidebar: slideUpIn
+
+  # Fancybox. There is support for old version 2 and new version 3.
 # Please, choose only any one variant, do not need to install both.
 # For install 2.x: https://github.com/theme-next/theme-next-fancybox
 # For install 3.x: https://github.com/theme-next/theme-next-fancybox3
@@ -294,7 +313,7 @@ vendors:
   _internal: lib
 
   # Internal version: 2.1.3
-  jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
+  jquery: //cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
@@ -307,7 +326,7 @@ vendors:
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload: //cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js
+  lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1.9.7/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
