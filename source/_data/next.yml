@@ -45,10 +45,6 @@ menu:
   #commonweal: /404/ || heartbeat
   photos: /photos/ || camera-retro
 
-# Enable/Disable menu icons / item badges.
-menu_settings:
-  icons: true
-  badges: true
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -342,7 +338,7 @@ vendors:
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
-  fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
+  # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com

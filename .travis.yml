@@ -5,10 +5,11 @@ node_js:
 
 install:
 - yarn
-- yarn global add hexo-cli
+- yarn global add hexo-cli gulp
 
 script:
 - hexo g
+- gulp
 - hexo d
 - rm -rf ~/.ssh
 
