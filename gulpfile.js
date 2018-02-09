@@ -57,8 +57,7 @@ gulp.task('concat', () => {
     `${JS_FOLDER}src/motion.js`,
     `${JS_FOLDER}src/bootstrap.js`,
     `${JS_FOLDER}src/affix.js`,
-    `${JS_FOLDER}src/schemes/pisces.js`,
-    `!${JS_FOLDER}src/*.min.js`
+    `${JS_FOLDER}src/schemes/*.js`
   ]
   return gulp
     .src(jsFiles)
@@ -146,4 +145,4 @@ gulp.task('clean', () => {
     .pipe(gulp.dest('./public'))
 })
 
-gulp.task('default', gulpSequence('bundle', 'fs', 'base64', 'clean', 'minify'))
+gulp.task('default', gulpSequence('bundle', 'fs', 'clean', 'minify'))

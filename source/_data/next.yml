@@ -236,6 +236,8 @@ disqusapi:
 
 # Google Analytics
 google_analytics: UA-89637345-1
+google_gtag: false
+
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
