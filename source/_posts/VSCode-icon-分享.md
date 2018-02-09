@@ -2,7 +2,7 @@
 title: VSCode icon 分享
 urlname: vscode-icon-share
 date: 2017-10-12 08:42:57
-tags: [VSCode,icon]
+tags: [VSCode, Icon, Editor]
 ---
 
 ![Preview of Visual Studio Code icon](https://i.loli.net/2017/10/12/59dec0e414d15.png)

@@ -96,7 +96,7 @@ links:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -142,6 +142,18 @@ sidebar:
   onmobile: false
 
 
+# Related popular posts
+# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+related_posts:
+  enable: true
+  title: 相关文章
+  display_in_home: false
+  params:
+    maxCount: 5
+    #PPMixingRate: 0.0
+    #isDate: false
+    #isImage: false
+    #isExcerpt: false
 
 # Declare license on posts
 post_copyright:
@@ -171,13 +183,13 @@ font:
   # `family: Times New Roman`. Without any quotes.
   # `size: xx`. Use `px` as unit.
 
-  # Global font settings used on <body> element.
+  # Global font settings used for all elements in <body>.
   global:
     external: true
     family: Lato
     size:
 
-  # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
+  # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
   headings:
     external: true
