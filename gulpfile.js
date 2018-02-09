@@ -3,6 +3,7 @@ const gulp         = require('gulp')
 const rev          = require('gulp-rev')
 const csso         = require('gulp-csso')
 const uglify       = require('gulp-uglify')
+const base64       = require('gulp-base64')
 const rename       = require('gulp-rename')
 const useref       = require('gulp-useref')
 const concat       = require('gulp-concat')
@@ -124,6 +125,19 @@ gulp.task(
   gulpSequence('remove-google-fonts', 'replace-url', 'fontspider')
 )
 
+gulp.task('base64', () => {
+  return gulp
+  .src('./public/css/main.css')
+  .pipe(
+    base64({
+      baseDir: './public',
+      extensions: ['png', 'svg'],
+      maxImageSize: 25 * 1024
+    })
+  )
+  .pipe(gulp.dest('./public/css'))
+})
+
 gulp.task('clean', () => {
   del(['./public/icon.html', `${JS_FOLDER}rev-manifest.json`])
   return gulp
@@ -132,4 +146,4 @@ gulp.task('clean', () => {
     .pipe(gulp.dest('./public'))
 })
 
-gulp.task('default', gulpSequence('bundle', 'fs', 'clean', 'minify'))
+gulp.task('default', gulpSequence('bundle', 'fs', 'base64', 'clean', 'minify'))
