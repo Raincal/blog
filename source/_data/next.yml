@@ -111,7 +111,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-creative_commons: by-nc-sa
+# creative_commons: by-nc-sa
 #creative_commons:
 
 sidebar:
@@ -146,7 +146,7 @@ sidebar:
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true
-  title: 相关文章
+  title:
   display_in_home: false
   params:
     maxCount: 5
@@ -248,23 +248,16 @@ leancloud_visitors:
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  # count values only if the other configs are false
   enable: true
+  total_visitors: true
+  total_visitors_icon: user
+  total_views: true
+  total_views_icon: eye
+  post_views: false
+  post_views_icon: eye
   # fix PV/UV when change domain
   uv_offset: 1230
   pv_offset: 8166
-  # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
-  # custom pv span for the whole site
-  site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
-  # custom pv span for one page only
-  page_pv: false
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
 
 
 # Local search
@@ -329,7 +322,7 @@ vendors:
   # See: http://fancyapps.com/fancybox/
   fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.2.5/dist/jquery.fancybox.min.js
   fancybox_css: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.2.5/dist/jquery.fancybox.min.css
-
+  
   # Internal version: 1.0.6
   # See: https://github.com/ftlabs/fastclick
   fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
