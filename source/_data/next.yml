@@ -142,7 +142,12 @@ sidebar:
   onmobile: false
 
 
-# Related popular posts
+# Reward
+reward_comment: 新年快乐 (゜-゜)つロ
+wechatpay: /images/wechatpay.jpg
+alipay: /images/alipay.jpg
+
+  # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true
