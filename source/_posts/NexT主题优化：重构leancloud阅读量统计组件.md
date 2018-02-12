@@ -1,5 +1,5 @@
 ---
-title: NexT主题优化：重构leancloud阅读量统计组件
+title: NexT主题优化：重构leancloud阅读量统计模块
 urlname: hexo-next-optimize-leancloud
 date: 2018-02-11 13:13:35
 tags: [NexT, Leancloud]
@@ -30,7 +30,7 @@ https://app-router.leancloud.cn/2/route?appId= <替换为 appId>
 
 {% note info %}
 NexT 主题里使用的 SDK 是 av-core-mini-0.6.4，这个库 gzip 后有 28.5KB
-对于一个只有几个请求的小组件来说，完全没必要用 SDK，可以手动请求官方 API 完成目的
+对于一个只有几个请求的小模块来说，完全没必要用 SDK，可以手动请求官方 API 完成目的
 {% endnote %}
 
 重构后的代码可以到我的[GitHub](https://github.com/Raincal/hexo-theme-next/blob/master/layout/_third-party/analytics/lean-analytics.swig)查看

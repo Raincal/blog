@@ -16,7 +16,7 @@ http://get.daocloud.io/#install-docker
 
 路径：自有主机 -> 集群管理 -> 添加主机
 
-![深度截图_选择区域_20170807083400.png](https://i.loli.net/2017/08/07/5987e1158c3a8.png)
+![深度截图_选择区域_20170807083400.png](https://ooo.0o0.ooo/2018/02/12/5a811f88dd4e3.png)
 
 <!-- more -->
 

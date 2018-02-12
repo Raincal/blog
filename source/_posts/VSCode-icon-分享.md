@@ -5,7 +5,7 @@ date: 2017-10-12 08:42:57
 tags: [VSCode, Icon, Editor]
 ---
 
-![Preview of Visual Studio Code icon](https://i.loli.net/2017/10/12/59dec0e414d15.png)
+![Preview of Visual Studio Code icon](https://ooo.0o0.ooo/2018/02/12/5a811f890ca9c.png)
 
 Icon created for [Visual Studio Code](https://code.visualstudio.com)
 
