@@ -1,10 +1,11 @@
+const fs           = require('fs')
 const del          = require('del')
 const gulp         = require('gulp')
 const rev          = require('gulp-rev')
 const csso         = require('gulp-csso')
+const swig         = require('gulp-swig')
+const data         = require('gulp-data')
 const uglify       = require('gulp-uglify')
-const base64       = require('gulp-base64')
-const rename       = require('gulp-rename')
 const useref       = require('gulp-useref')
 const concat       = require('gulp-concat')
 const htmlmin      = require('gulp-htmlmin')
@@ -97,52 +98,75 @@ gulp.task('bundle', gulpSequence(['concat', 'merge'], 'revision', 'revreplace'))
 gulp.task('remove-google-fonts', () => {
   return gulp
     .src('./public/index.html')
-    .pipe(rename('icon.html'))
-    .pipe(rmLines({ filters: [/<link\shref=\"\/\/fonts.googleapis.com/i] }))
-    .pipe(gulp.dest('./public'))
+    .pipe(rmLines({ filters: [/<link\shref=\"\/\/fonts.cat.net/i] }))
+    .pipe(gulp.dest('./public/temp'))
 })
 
 gulp.task('replace-url', () => {
   return gulp
-    .src(['./public/icon.html'])
+    .src(['./public/temp/index.html'])
     .pipe(
       replace({
         'href="//': 'href="https://',
-        'href="/lib': 'href="./lib',
-        'href="/css': 'href="./css'
+        'href="/lib': 'href="../lib',
+        'href="/css': 'href="../css'
       })
     )
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./public/temp'))
 })
 
 gulp.task('fontspider', () => {
-  return gulp.src('./public/icon.html').pipe(fontSpider())
+  return gulp.src('./public/temp/*.html').pipe(fontSpider())
+})
+
+gulp.task('gen-html', () => {
+  const tpl = `
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    {% for icon in data %}
+    <i class="fa {{ icon }}"></i>
+    {% endfor %}
+    `
+
+  fs.writeFile('./public/temp/temp.html', tpl, err => {
+    if (err) throw err
+    console.log('temp.html created!')
+  })
+})
+
+gulp.task('inject-data', ['gen-html'], () => {
+  const icons = {
+    data: [
+      'fa-pulse',
+      'fa-frown-o',
+      'fa-spinner',
+      'fa-chevron-left',
+      'fa-chevron-right'
+    ]
+  }
+  return gulp
+    .src('./public/temp/temp.html')
+    .pipe(
+      data(() => {
+        return icons
+      })
+    )
+    .pipe(swig())
+    .pipe(gulp.dest('./public/temp'))
 })
 
 gulp.task(
   'fs',
-  gulpSequence('remove-google-fonts', 'replace-url', 'fontspider')
+  gulpSequence(
+    'remove-google-fonts',
+    'replace-url',
+    'inject-data',
+    'fontspider'
+  )
 )
 
-gulp.task('base64', () => {
-  return gulp
-  .src('./public/css/main.css')
-  .pipe(
-    base64({
-      baseDir: './public',
-      extensions: ['png', 'svg'],
-      maxImageSize: 25 * 1024
-    })
-  )
-  .pipe(gulp.dest('./public/css'))
-})
-
 gulp.task('clean', () => {
-  del(['./public/icon.html', `${JS_FOLDER}rev-manifest.json`])
-  return gulp
-    .src('./public/index.html')
-    .pipe(rmLines({ filters: [/<div\sclass=\"icon\"/i] }))
-    .pipe(gulp.dest('./public'))
+  del(['./public/temp', `${JS_FOLDER}rev-manifest.json`])
 })
 
-gulp.task('default', gulpSequence('bundle', 'fs', 'clean', 'minify'))
+gulp.task('default', gulpSequence('bundle', 'fs', 'minify', 'clean'))
