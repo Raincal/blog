@@ -6,14 +6,15 @@ install:
 - yarn
 - yarn global add hexo-cli gulp
 script:
-- git clone git@git.coding.net:raincal/raincal.git .deploy_git
-- hexo g && gulp
-- hexo d
-- rm -rf .deploy_git
 - git clone git@git.coding.net:raincal/mblog.git .deploy_git
 - cp .mobile/custom.yml source/_data
-- cp .mobile/_config.yml .
 - hexo g && gulp mobile
+- hexo d
+- rm -rf .deploy_git
+- git clone git@git.coding.net:raincal/raincal.git .deploy_git
+- cp .mobile/_config.yml .
+- rm -r source/_data/custom.yml
+- hexo g && gulp
 - hexo d
 - rm -rf ~/.ssh
 branches:

@@ -85,7 +85,7 @@ sitemap:
 deploy:
   type: git
   repo: 
-    coding: git@git.coding.net:raincal/mblog.git
+    coding: git@git.coding.net:raincal/raincal.git
   branch: 
     coding: coding-pages
 
