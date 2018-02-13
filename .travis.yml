@@ -9,12 +9,12 @@ script:
 - git clone git@git.coding.net:raincal/raincal.git .deploy_git
 - hexo g && gulp
 - hexo d
-- cp custom.yml source/_data
-- npm run build && gulp mobile
-- cd public && git init
-- git remote add origin git@git.coding.net:raincal/mblog.git
-- git commit -am "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
-- git push -u origin master
+- rm -rf .deploy_git
+- git clone git@git.coding.net:raincal/mblog.git .deploy_git
+- cp .mobile/custom.yml source/_data
+- cp .mobile/_config.yml .
+- hexo g && gulp mobile
+- hexo d
 - rm -rf ~/.ssh
 branches:
   only:
