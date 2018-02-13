@@ -12,6 +12,7 @@ script:
 - cp custom.yml source/_data
 - npm run build && gulp mobile
 - cd public && git init
+- git remote add origin git@git.coding.net:raincal/mblog.git
 - git commit -am "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 - git push -u origin master
 - rm -rf ~/.ssh
