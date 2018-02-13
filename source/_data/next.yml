@@ -233,7 +233,7 @@ disqusapi:
   mode: 3
   badge: '博主'
   timeout: 3000
-  count: true
+  count: false
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
