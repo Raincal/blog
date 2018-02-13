@@ -66,6 +66,18 @@ gulp.task('concat', () => {
     .pipe(gulp.dest(JS_FOLDER))
 })
 
+gulp.task('concat-mobile', () => {
+  const jsFiles = [
+    `${JS_FOLDER}src/utils.js`,
+    `${JS_FOLDER}src/motion.js`,
+    `${JS_FOLDER}src/bootstrap.js`
+  ]
+  return gulp
+    .src(jsFiles)
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest(JS_FOLDER))
+})
+
 gulp.task('merge', () => {
   return gulp
     .src('./public/**/*.html')
@@ -93,6 +105,7 @@ gulp.task('revreplace', () => {
 })
 
 gulp.task('bundle', gulpSequence(['concat', 'merge'], 'revision', 'revreplace'))
+gulp.task('bundle-mobile', gulpSequence(['concat-mobile', 'merge'], 'revision', 'revreplace'))
 
 // font spider
 gulp.task('remove-google-fonts', () => {
@@ -168,5 +181,7 @@ gulp.task(
 gulp.task('clean', () => {
   del(['./public/temp', `${JS_FOLDER}rev-manifest.json`])
 })
+
+gulp.task('mobile', gulpSequence('bundle-mobile', 'fs', 'minify', 'clean'))
 
 gulp.task('default', gulpSequence('bundle', 'fs', 'minify', 'clean'))

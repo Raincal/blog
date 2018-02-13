@@ -304,7 +304,7 @@ fancybox: true
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
-fastclick: true
+fastclick: false
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
@@ -416,3 +416,6 @@ vendors:
   # https://github.com/Raincal/disqus-php-api
   iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.0.2/dist/iDisqus.min.css
   iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.0.2/dist/iDisqus.min.js
+
+is_mobile: false
+mobile_url: "https://m.raincal.com"
