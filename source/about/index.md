@@ -7,12 +7,12 @@ type: "about"
 ### 关于本站
 #### 域名： [raincal.com](https://raincal.com) ← [raincal.top](https://raincal.top) ← cyj228.com
 #### 主题：
-- [PC端](https://raincal.com):  [NexT.Gemini](https://github.com/theme-next/hexo-theme-next)
-- [移动端](https://m.raincal.com):  [NexT.Mist](https://github.com/theme-next/hexo-theme-next)
+- [PC端](https://raincal.com)：[NexT.Gemini](https://github.com/theme-next/hexo-theme-next)
+- [移动端](https://m.raincal.com)：[NexT.Mist](https://github.com/theme-next/hexo-theme-next)
 
 #### 评论：
 - 国内：[Disqus PHP API](https://github.com/fooleap/disqus-php-api.git)
-- 国外：[Disqus](https://github.com/fooleap/disqus-php-api.git)
+- 国外：[Disqus](https://disqus.com/)
 
 #### 托管：
 - 国内：[Coding Pages](https://coding.net/pages/)
