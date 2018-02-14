@@ -1,0 +1,20 @@
+footer:
+  powered: false
+
+  theme:
+    # Theme & scheme info link (Theme - NexT.scheme).
+    enable: false
+    # Version info of NexT after scheme info (vX.X.X).
+    version: false
+
+busuanzi_count:
+  enable: false
+  
+disqus:
+  enable: true
+  shortname: raincal
+  count: false
+  lazyload: true
+
+disqusapi:
+  enable: false
