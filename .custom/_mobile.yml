@@ -39,7 +39,7 @@ busuanzi_count:
   enable: false
 
 motion:
-  enable: true
+  enable: false
   async: false
 
 
