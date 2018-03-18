@@ -5,7 +5,7 @@
 # Site
 title: Raincal's Blog
 subtitle:
-description: 錬金術師
+description: El Psy Congroo
 author: Raincal
 language: zh-CN
 timezone:
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://raincal.com
 root: /
-permalink: :year/:month/:day/:urlname/
+permalink: post/:urlname/
 permalink_defaults:
 
 # Directory
@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -94,3 +94,10 @@ search:
   field: post
   format: html
   limit: 10000
+
+# Imgurl
+# Important: This value starts without a protocol and it doesn't end with '/'.
+# httpsMod: true | false 
+# If the value not set, image url will automatically adapt to the site's protocol.
+imgurl: cdn-1256167913.image.myqcloud.com/images
+httpsMod:

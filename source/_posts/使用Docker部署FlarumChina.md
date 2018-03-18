@@ -16,7 +16,7 @@ http://get.daocloud.io/#install-docker
 
 路径：自有主机 -> 集群管理 -> 添加主机
 
-![深度截图_选择区域_20170807083400.png](https://ooo.0o0.ooo/2018/02/12/5a811f88dd4e3.png)
+{% imgurl 'deploy-flarumChina-with-docker/pic01.png' alt:'深度截图_选择区域_20170807083400' %}
 
 <!-- more -->
 
@@ -25,13 +25,16 @@ http://get.daocloud.io/#install-docker
 我们使用到的镜像是 [raincal/docker-flarum-china](https://github.com/Raincal/docker-flarum-china)
 
 ### Ports
+
 `8888`
 
 ### Volume
+
 - /flarum/app/assets : FlarumChina 资源目录
 - /flarum/app/extensions : FlarumChina 插件目录
 
 ### 环境变量
+
 | 变量 | 描述 | 类型 | 默认值 |
 | -------- | ----------- | ---- | ------------- |
 | **UID** | Flarum user id | *optional* | 991
@@ -110,7 +113,7 @@ nginx:
 
 若使用胶囊主机，可以到 自有主机 -> Stack -> 创建新 Stack
 
-![深度截图_选择区域_20170807084450.png](https://i.loli.net/2017/08/07/5987e1158bc73.png)
+{% imgurl 'deploy-flarumChina-with-docker/pic02.png' alt:'深度截图_选择区域_20170807084450' %}imgurl '
 
 ### 设置 nginx 反向代理
 
@@ -118,7 +121,7 @@ nginx:
 
 `ssh ubuntu@52.80.37.119`
 
-![深度截图_选择区域_20170807093749.png](https://i.loli.net/2017/08/07/5987e115741b5.png)
+{% imgurl 'deploy-flarumChina-with-docker/pic03.png' alt:'深度截图_选择区域_20170807093749' %}imgurl 'imgurl '
 
 ```sh
 docker exec -it nginx ngxproxy
@@ -128,7 +131,7 @@ We're about to create a new virtual host (AKA server block).
 
 Name: flarum
 Domain: forum.domain.tld
-Webroot (default is /): 
+Webroot (default is /):
 Container: flarum
 Port (default is 80): 8888
 HTTPS [y/n]: n
@@ -143,6 +146,6 @@ nginx successfully reloaded.
 
 **管理员密码需要大于8位**
 
-![screencapture-joudo-tk-1502095912645.png](https://ooo.0o0.ooo/2017/08/07/59882ebce3203.png)
+{% imgurl 'deploy-flarumChina-with-docker/pic04.png' alt:'screencapture-joudo-tk-1502095912645imgurl '
 
-![screencapture-54-222-128-207-1502096436141.png](https://ooo.0o0.ooo/2017/08/07/59882ebd28ba8.png)
+{% imgurl 'deploy-flarumChina-with-docker/pic05.png' alt:'screencapture-54-222-128-207-1502096436141' %}

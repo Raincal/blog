@@ -29,15 +29,14 @@ grub rescue> normal
 
 执行完 normal 命令后，顺利的话就能进入系统了
 
-
 ### 查找 boot/efi
- 
+
 通过命令 **df** 查看 boot/efi 所在挂载点
 
-![df.png](https://ooo.0o0.ooo/2017/11/22/5a15424b4f6dc.png)
+{% imgurl 'grub-rescue/grub.png' alt:grub %}
 
 ### 重新安装 grub
 
 ```bash
-➜ sudo grub-install /dev/sda1 
+➜ sudo grub-install /dev/sda1
 ```

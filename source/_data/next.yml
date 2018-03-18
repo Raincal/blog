@@ -97,7 +97,7 @@ links:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.png
+avatar: https://cdn-1256167913.image.myqcloud.com/images/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -145,8 +145,8 @@ sidebar:
 
 # Reward
 reward_comment: 新年快乐 (゜-゜)つロ
-wechatpay: /images/wechatpay.jpg
-alipay: /images/alipay.jpg
+wechatpay: https://cdn-1256167913.image.myqcloud.com/images/wechatpay.jpg!200
+alipay: https://cdn-1256167913.image.myqcloud.com/images/alipay.jpg!200
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -165,6 +165,16 @@ related_posts:
 post_copyright:
   enable: true
   license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noopener" target="_blank">CC BY-NC-SA 4.0</a>
+
+  # Manual define the max content width
+# !!Only available for Gemini Scheme currently
+# Leave it empty for the default 75% (suggest not less than 1000px)
+max_content_width: 1112px
+
+# Manual define the sidebar width
+# !!Only available for Gemini Scheme currently
+# Leave it empty for the default 240
+sidebar_width:
 
 # ---------------------------------------------------------------
 # Font Settings
