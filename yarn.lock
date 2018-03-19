@@ -442,6 +442,10 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@^2.6.2:
+  version "2.11.0"
+  resolved "http://registry.npm.taobao.org/bluebird/download/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
+
 bluebird@^3.0.6, bluebird@^3.2.2, bluebird@^3.4.0, bluebird@^3.5.0:
   version "3.5.1"
   resolved "http://registry.npm.taobao.org/bluebird/download/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
@@ -1192,10 +1196,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-ejs@^1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/ejs/download/ejs-1.0.0.tgz#c9c60a48a46ee452fb32a71c317b95e5aa1fcb3d"
-
 ejs@^2.3.4:
   version "2.5.7"
   resolved "http://registry.npm.taobao.org/ejs/download/ejs-2.5.7.tgz#cc872c168880ae3c7189762fd5ffc00896c9518a"
@@ -1215,6 +1215,10 @@ end-of-stream@~0.1.5:
   resolved "http://registry.npm.taobao.org/end-of-stream/download/end-of-stream-0.1.5.tgz#8e177206c3c80837d85632e8b9359dfe8b2f6eaf"
   dependencies:
     once "~1.3.0"
+
+ent@^2.2.0:
+  version "2.2.0"
+  resolved "http://registry.npm.taobao.org/ent/download/ent-2.2.0.tgz#e964219325a21d05f44466a2f686ed6ce5f5dd1d"
 
 entities@1.0:
   version "1.0.0"
@@ -1269,7 +1273,7 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "http://registry.npm.taobao.org/etag/download/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
-event-stream@^3.3.1:
+event-stream@^3.3.4:
   version "3.3.4"
   resolved "http://registry.npm.taobao.org/event-stream/download/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
   dependencies:
@@ -1342,7 +1346,7 @@ extend-shallow@^3.0.0, extend-shallow@^3.0.2:
     assign-symbols "^1.0.0"
     is-extendable "^1.0.1"
 
-extend@^3.0.0, extend@~3.0.0, extend@~3.0.1:
+extend@^3.0.0, extend@^3.0.1, extend@~3.0.0, extend@~3.0.1:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/extend/download/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
@@ -1808,7 +1812,7 @@ glob@^6.0.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
+glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
   version "7.1.2"
   resolved "http://registry.npm.taobao.org/glob/download/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -1907,7 +1911,7 @@ graceful-fs@~1.2.0:
   version "1.2.3"
   resolved "http://registry.npm.taobao.org/graceful-fs/download/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
 
-gulp-concat@^2.5.2, gulp-concat@^2.6.1:
+gulp-concat@^2.6.1:
   version "2.6.1"
   resolved "http://registry.npm.taobao.org/gulp-concat/download/gulp-concat-2.6.1.tgz#633d16c95d88504628ad02665663cee5a4793353"
   dependencies:
@@ -1958,7 +1962,7 @@ gulp-htmlmin@^4.0.0:
     readable-stream "^2.0.2"
     tryit "^1.0.1"
 
-gulp-if@^2.0.0:
+gulp-if@^2.0.2:
   version "2.0.2"
   resolved "http://registry.npm.taobao.org/gulp-if/download/gulp-if-2.0.2.tgz#a497b7e7573005041caa2bc8b7dda3c80444d629"
   dependencies:
@@ -2071,19 +2075,20 @@ gulp-url-replace@^1.0.2:
     gulp-util "^3.0.7"
     through2 "^2.0.1"
 
-gulp-useref@^3.1.4:
-  version "3.1.4"
-  resolved "http://registry.npm.taobao.org/gulp-useref/download/gulp-useref-3.1.4.tgz#3678f00b96fed21147021b9be43d77a26d6d14ea"
+gulp-useref@^3.1.5:
+  version "3.1.5"
+  resolved "http://registry.npm.taobao.org/gulp-useref/download/gulp-useref-3.1.5.tgz#beb8e009c19f819f604de8d191db128bd244aa70"
   dependencies:
-    event-stream "^3.3.1"
-    glob "^7.0.3"
-    gulp-concat "^2.5.2"
-    gulp-if "^2.0.0"
+    event-stream "^3.3.4"
+    extend "^3.0.1"
+    glob "^7.1.2"
+    gulp-concat "^2.6.1"
+    gulp-if "^2.0.2"
     is-relative-url "1.0.0"
-    plugin-error "^0.1.2"
-    through2 "^2.0.1"
-    useref "^1.2.0"
-    vinyl-fs "^3.0.0"
+    plugin-error "^1.0.1"
+    through2 "^2.0.3"
+    useref "^1.4.1"
+    vinyl-fs "^3.0.2"
 
 gulp-util@>=2.2.0, gulp-util@^3.0.0, gulp-util@^3.0.7:
   version "3.0.8"
@@ -2364,12 +2369,11 @@ hexo-generator-index@^0.2.1:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
-hexo-generator-searchdb@^1.0.8:
-  version "1.0.8"
-  resolved "http://registry.npm.taobao.org/hexo-generator-searchdb/download/hexo-generator-searchdb-1.0.8.tgz#04245256e1413a66313932dbf1c0a7e568559301"
+hexo-generator-search@^2.2.1:
+  version "2.2.1"
+  resolved "http://registry.npm.taobao.org/hexo-generator-search/download/hexo-generator-search-2.2.1.tgz#25b9b778f2b8b5b16b50cb0c0f1afbd4dd586221"
   dependencies:
-    ejs "^1.0.0"
-    striptags latest
+    nunjucks "^3.0.1"
     utils-merge "^1.0.0"
 
 hexo-generator-sitemap@^1.2.0:
@@ -2456,6 +2460,20 @@ hexo-server@^0.3.1:
     opn "^4.0.0"
     serve-static "^1.10.0"
 
+hexo-tag-imgurl@0.0.3:
+  version "0.0.3"
+  resolved "http://registry.npm.taobao.org/hexo-tag-imgurl/download/hexo-tag-imgurl-0.0.3.tgz#6f34ece137e308b8cca7abe38a9a93ae14b09a14"
+  dependencies:
+    hexo-util "^0.1.7"
+
+hexo-util@^0.1.7:
+  version "0.1.7"
+  resolved "http://registry.npm.taobao.org/hexo-util/download/hexo-util-0.1.7.tgz#fdc84e1bf21b19c4c8695424585aa9f13ecd6353"
+  dependencies:
+    bluebird "^2.6.2"
+    ent "^2.2.0"
+    highlight.js "^8.6.0"
+
 hexo-util@^0.6.0, hexo-util@^0.6.2:
   version "0.6.3"
   resolved "http://registry.npm.taobao.org/hexo-util/download/hexo-util-0.6.3.tgz#16a2ade457bef955af0dfd22a3fe6f0a49a9137c"
@@ -2498,6 +2516,10 @@ hexo@^3.6.0:
     tildify "^1.2.0"
     titlecase "^1.1.2"
     warehouse "^2.2.0"
+
+highlight.js@^8.6.0:
+  version "8.9.1"
+  resolved "http://registry.npm.taobao.org/highlight.js/download/highlight.js-8.9.1.tgz#b8a9c5493212a9392f0222b649c9611497ebfb88"
 
 highlight.js@^9.4.0:
   version "9.12.0"
@@ -3742,7 +3764,7 @@ nunjucks@^3.0.0:
   optionalDependencies:
     chokidar "^1.6.0"
 
-nunjucks@^3.1.2:
+nunjucks@^3.0.1, nunjucks@^3.1.2:
   version "3.1.2"
   resolved "http://registry.npm.taobao.org/nunjucks/download/nunjucks-3.1.2.tgz#85945a66bb8239bb37ecef83dab4cc1f152aabb9"
   dependencies:
@@ -4859,10 +4881,6 @@ striptags@^2.1.1:
   version "2.2.1"
   resolved "http://registry.npm.taobao.org/striptags/download/striptags-2.2.1.tgz#4c450b708d41b8bf39cf24c49ff234fc6aabfd32"
 
-striptags@latest:
-  version "3.1.1"
-  resolved "http://registry.npm.taobao.org/striptags/download/striptags-3.1.1.tgz#c8c3e7fdd6fb4bb3a32a3b752e5b5e3e38093ebd"
-
 stylus@0.54.5, stylus@^0.54.5:
   version "0.54.5"
   resolved "http://registry.npm.taobao.org/stylus/download/stylus-0.54.5.tgz#42b9560931ca7090ce8515a798ba9e6aa3d6dc79"
@@ -5186,9 +5204,9 @@ user-home@^1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/user-home/download/user-home-1.1.1.tgz#2b5be23a32b63a7c9deb8d0f28d485724a3df190"
 
-useref@^1.2.0:
-  version "1.4.0"
-  resolved "http://registry.npm.taobao.org/useref/download/useref-1.4.0.tgz#fd57b19a7a68af2f954515c386b3d73018539129"
+useref@^1.4.1:
+  version "1.4.1"
+  resolved "http://registry.npm.taobao.org/useref/download/useref-1.4.1.tgz#02dabad10b1a85025d964252fca31b805931ad7d"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
@@ -5299,7 +5317,7 @@ vinyl-fs@^0.3.0:
     through2 "^0.6.1"
     vinyl "^0.4.0"
 
-vinyl-fs@^3.0.0:
+vinyl-fs@^3.0.2:
   version "3.0.2"
   resolved "http://registry.npm.taobao.org/vinyl-fs/download/vinyl-fs-3.0.2.tgz#1b86258844383f57581fcaac081fe09ef6d6d752"
   dependencies:
