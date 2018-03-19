@@ -153,7 +153,7 @@ alipay: https://cdn-1256167913.image.myqcloud.com/images/alipay.jpg!200
 related_posts:
   enable: true
   title:
-  display_in_home: falseaidu
+  display_in_home: false
   params:
     maxCount: 5
     #PPMixingRate: 0.0
