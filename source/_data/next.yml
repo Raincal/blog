@@ -153,7 +153,7 @@ alipay: https://cdn-1256167913.image.myqcloud.com/images/alipay.jpg!200
 related_posts:
   enable: true
   title:
-  display_in_home: false
+  display_in_home: falseaidu
   params:
     maxCount: 5
     #PPMixingRate: 0.0
@@ -274,6 +274,8 @@ busuanzi_count:
   # fix PV/UV when change domain
   uv_offset: 1230
   pv_offset: 8166
+
+baidu_push: true
 
 
 # Local search
