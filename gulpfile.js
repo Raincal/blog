@@ -58,6 +58,7 @@ gulp.task('concat', () => {
     `${JS_FOLDER}src/motion.js`,
     `${JS_FOLDER}src/bootstrap.js`,
     `${JS_FOLDER}src/affix.js`,
+    `${JS_FOLDER}src/lean-analytics.js`,
     `${JS_FOLDER}src/schemes/*.js`
   ]
   return gulp
