@@ -113,7 +113,7 @@ nginx:
 
 若使用胶囊主机，可以到 自有主机 -> Stack -> 创建新 Stack
 
-{% imgurl 'deploy-flarumChina-with-docker/pic02.png' alt:'深度截图_选择区域_20170807084450' %}imgurl '
+{% imgurl 'deploy-flarumChina-with-docker/pic02.png' alt:'深度截图_选择区域_20170807084450' %}
 
 ### 设置 nginx 反向代理
 
@@ -121,7 +121,7 @@ nginx:
 
 `ssh ubuntu@52.80.37.119`
 
-{% imgurl 'deploy-flarumChina-with-docker/pic03.png' alt:'深度截图_选择区域_20170807093749' %}imgurl 'imgurl '
+{% imgurl 'deploy-flarumChina-with-docker/pic03.png' alt:'深度截图_选择区域_20170807093749' %}
 
 ```sh
 docker exec -it nginx ngxproxy
