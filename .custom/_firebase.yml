@@ -9,12 +9,3 @@ footer:
 
 busuanzi_count:
   enable: false
-  
-disqus:
-  enable: true
-  shortname: raincal
-  count: false
-  lazyload: true
-
-disqusapi:
-  enable: false

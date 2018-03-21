@@ -7,7 +7,14 @@ footer:
   since: 2015
 
   # Icon between year and copyright info.
-  icon: heart
+  icon: 
+    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
+    # `heart` is recommended with animation in red (#ff0000).
+    name: heart
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#d43f57"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -112,7 +119,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-# creative_commons: by-nc-sa
+#creative_commons: by-nc-sa
 #creative_commons:
 
 sidebar:
