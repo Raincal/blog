@@ -71,7 +71,8 @@ gulp.task('concat-mobile', () => {
   const jsFiles = [
     `${JS_FOLDER}src/utils.js`,
     `${JS_FOLDER}src/motion.js`,
-    `${JS_FOLDER}src/bootstrap.js`
+    `${JS_FOLDER}src/bootstrap.js`,
+    `${JS_FOLDER}src/lean-analytics.js`
   ]
   return gulp
     .src(jsFiles)

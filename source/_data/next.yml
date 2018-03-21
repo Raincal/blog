@@ -427,8 +427,8 @@ vendors:
 
   # disqus-php-api
   # https://github.com/Raincal/disqus-php-api
-  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.2/dist/iDisqus.min.css
-  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.2/dist/iDisqus.min.js
+  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.3/dist/iDisqus.min.css
+  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.3/dist/iDisqus.min.js
 
 is_mobile: false
 mobile_url: "https://m.raincal.com"
