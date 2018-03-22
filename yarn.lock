@@ -2369,13 +2369,6 @@ hexo-generator-index@^0.2.1:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
-hexo-generator-search@^2.2.1:
-  version "2.2.1"
-  resolved "http://registry.npm.taobao.org/hexo-generator-search/download/hexo-generator-search-2.2.1.tgz#25b9b778f2b8b5b16b50cb0c0f1afbd4dd586221"
-  dependencies:
-    nunjucks "^3.0.1"
-    utils-merge "^1.0.0"
-
 hexo-generator-sitemap@^1.2.0:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/hexo-generator-sitemap/download/hexo-generator-sitemap-1.2.0.tgz#3018f8d7d1e2e42b3f71a65a7316ffcf583bc3f3"
@@ -3764,7 +3757,7 @@ nunjucks@^3.0.0:
   optionalDependencies:
     chokidar "^1.6.0"
 
-nunjucks@^3.0.1, nunjucks@^3.1.2:
+nunjucks@^3.1.2:
   version "3.1.2"
   resolved "http://registry.npm.taobao.org/nunjucks/download/nunjucks-3.1.2.tgz#85945a66bb8239bb37ecef83dab4cc1f152aabb9"
   dependencies:
