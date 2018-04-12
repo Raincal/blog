@@ -113,7 +113,7 @@ gulp.task('bundle-mobile', gulpSequence(['concat-mobile', 'merge'], 'revision', 
 gulp.task('remove-google-fonts', () => {
   return gulp
     .src('./public/index.html')
-    .pipe(rmLines({ filters: [/<link\shref=\"\/\/fonts.cat.net/i] }))
+    .pipe(rmLines({ filters: [/<link\shref=\"\/\/fonts.loli.net/i] }))
     .pipe(gulp.dest('./public/temp'))
 })
 

@@ -19,8 +19,11 @@ footer:
   # If not defined, will be used `author` from Hexo main config.
   copyright:
   # -------------------------------------------------------------
-  # Hexo link (Powered by Hexo).
-  powered: true
+  powered:
+    # Hexo link (Powered by Hexo).
+    enable: true
+    # Version info of Hexo after Hexo link (vX.X.X).
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -199,7 +202,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host: //fonts.cat.net
+  host: //fonts.loli.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
