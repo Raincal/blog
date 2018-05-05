@@ -152,7 +152,17 @@ sidebar:
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
 
-
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enabled: false
+    # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
+    # And if post will edited in same day as created, edited time will show in popup title under created time label.
+    # If false show anyway, but if post edited in same day, show only edited time.
+    another_day: true
+  categories: true
 # Reward
 reward_comment: 新年快乐 (゜-゜)つロ
 wechatpay: https://cdn-1256167913.image.myqcloud.com/images/wechatpay.jpg!200
@@ -404,7 +414,7 @@ vendors:
 
   # Internal version: 3.3.0
   # https://github.com/ethantw/Han
-  han:
+  Han:
 
   # Internal version: 3.3.0
   # https://github.com/vinta/pangu.js
@@ -428,8 +438,8 @@ vendors:
 
   # disqus-php-api
   # https://github.com/Raincal/disqus-php-api
-  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.3/dist/iDisqus.min.css
-  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.3/dist/iDisqus.min.js
+  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.4/dist/iDisqus.min.css
+  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.4/dist/iDisqus.min.js
 
 is_mobile: false
 mobile_url: "https://m.raincal.com"
