@@ -1,6 +1,6 @@
 ---
 title: 使用Docker部署FlarumChina
-urlname: deploy-flarumChina-with-docker
+urlname: deploy-flarumchina-with-docker
 date: 2017-08-07 10:49:51
 tags: [Docker, Linux]
 ---
