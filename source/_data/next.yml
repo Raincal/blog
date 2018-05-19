@@ -105,9 +105,17 @@ links:
   Fong Ray's Blog: http://fangr.cc
 
 # Sidebar Avatar
-# in theme directory(source/images): /images/avatar.gif
-# in site  directory(source/uploads): /uploads/avatar.gif
-avatar: https://cdn-1256167913.image.myqcloud.com/images/avatar.png
+avatar:
+  # in theme directory(source/images): /images/avatar.gif
+  # in site  directory(source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: https://cdn-1256167913.image.myqcloud.com/images/avatar.png
+  # If true, the avatar would be dispalyed in circle.
+  rounded: false
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  # If true, the avatar would be rotated with the cursor.
+  rotated: false
 
 # Table Of Contents in the Sidebar
 toc:
@@ -438,8 +446,8 @@ vendors:
 
   # disqus-php-api
   # https://github.com/Raincal/disqus-php-api
-  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.4/dist/iDisqus.min.css
-  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.4/dist/iDisqus.min.js
+  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.5/dist/iDisqus.min.css
+  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.1.5/dist/iDisqus.min.js
 
 is_mobile: false
 mobile_url: "https://m.raincal.com"
