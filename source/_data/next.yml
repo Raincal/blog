@@ -100,8 +100,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  RAINCAL: https://raincal.tk
-  GOG: https://gog.now.sh
+  RAINCAL: https://blog.raincal.com
   Fong Ray's Blog: http://fangr.cc
 
 # Sidebar Avatar
