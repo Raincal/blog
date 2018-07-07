@@ -193,16 +193,6 @@ post_copyright:
   enable: true
   license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noopener" target="_blank">CC BY-NC-SA 4.0</a>
 
-  # Manual define the max content width
-# !!Only available for Gemini Scheme currently
-# Leave it empty for the default 75% (suggest not less than 1000px)
-max_content_width: 1112px
-
-# Manual define the sidebar width
-# !!Only available for Gemini Scheme currently
-# Leave it empty for the default 240
-sidebar_width:
-
 # ---------------------------------------------------------------
 # Font Settings
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
@@ -400,19 +390,15 @@ vendors:
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
 
-  # three
+  # Internal version: 1.0.0
+  # See: https://github.com/theme-next/theme-next-three
+  # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js
+  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three-waves.min.js
+  # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js
+  # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_sphere.min.js
   three:
-
-  # three_waves
-  # https://github.com/jjandxa/three_waves
   three_waves:
-
-  # three_waves
-  # https://github.com/jjandxa/canvas_lines
   canvas_lines:
-
-  # three_waves
-  # https://github.com/jjandxa/canvas_sphere
   canvas_sphere:
 
   # Internal version: 1.0.0

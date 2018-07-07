@@ -6,12 +6,11 @@ type: "about"
 
 ### 关于本站
 
-#### 域名： [raincal.com](https://raincal.com) ← [raincal.top](https://raincal.top) ← cyj228.com
+#### 域名： [raincal.com](https://raincal.com) ← ~~raincal.top~~ ← ~~cyj228.com~~
 
 #### 主题：
 
-- [PC端](https://raincal.com)：[NexT.Gemini](https://github.com/theme-next/hexo-theme-next)
-- [移动端](https://m.raincal.com)：[NexT.Mist](https://github.com/theme-next/hexo-theme-next)
+- [NexT](https://raincal.com)：[NexT.Gemini](https://github.com/theme-next/hexo-theme-next)
 
 #### 评论：
 
