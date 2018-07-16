@@ -219,7 +219,7 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Lato
+    family:
     size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
@@ -297,6 +297,10 @@ baidu_push: true
 google_search:
   enable: true
   site: https://gog.now.sh
+
+# Only for Gemini.
+css_doodle:
+  enable: true
 
 # Use velocity to animate everything.
 motion:
