@@ -75,7 +75,6 @@ social:
   GitHub: https://github.com/Raincal || github
   Twitter: https://twitter.com/cyj228 || twitter
   Weibo: https://weibo.com/cyj228 || weibo
-  Facebook: https://www.facebook.com/cyj228 || facebook
   Telegram: https://t.me/Raincal || telegram
   E-Mail: mailto:cyj94228@gmail.com || envelope
 
@@ -277,6 +276,11 @@ leancloud_visitors:
   enable: true
   app_id: xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz
   app_key: TgK8LqquaVhiY6lmrw6U8zcW
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in lc counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
+  security: false
+  betterPerformance: false
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -350,8 +354,8 @@ vendors:
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
-  fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.2.5/dist/jquery.fancybox.min.js
-  fancybox_css: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.2.5/dist/jquery.fancybox.min.css
+  fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js
+  fancybox_css: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css
   
   # Internal version: 1.0.6
   # See: https://github.com/ftlabs/fastclick
@@ -435,5 +439,5 @@ vendors:
 
   # disqus-php-api
   # https://github.com/Raincal/disqus-php-api
-  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.0/dist/iDisqus.min.css
-  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.0/dist/iDisqus.min.js
+  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.1/dist/iDisqus.min.css
+  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.1/dist/iDisqus.min.js
