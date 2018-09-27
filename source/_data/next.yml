@@ -100,6 +100,7 @@ links_layout: block
 #links_layout: inline
 links:
   RAINCAL: https://blog.raincal.com
+  UPTIME: https://status.raincal.com
   Fong Ray's Blog: https://fangr.cc
 
 # Sidebar Avatar
@@ -170,9 +171,9 @@ post_meta:
     another_day: true
   categories: true
 # Reward
-reward_comment: 新年快乐 (゜-゜)つロ
-wechatpay: https://cdn-1256167913.image.myqcloud.com/images/wechatpay.jpg!200
-alipay: https://cdn-1256167913.image.myqcloud.com/images/alipay.jpg!200
+# reward_comment: 新年快乐 (゜-゜)つロ
+# wechatpay: https://cdn-1256167913.image.myqcloud.com/images/wechatpay.jpg!200
+# alipay: https://cdn-1256167913.image.myqcloud.com/images/alipay.jpg!200
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -439,5 +440,5 @@ vendors:
 
   # disqus-php-api
   # https://github.com/Raincal/disqus-php-api
-  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.2/dist/iDisqus.min.css
-  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.2/dist/iDisqus.min.js
+  iDisqus_css: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.3/dist/iDisqus.min.css
+  iDisqus_js: //cdn.jsdelivr.net/gh/Raincal/disqus-php-api@1.2.3/dist/iDisqus.min.js
