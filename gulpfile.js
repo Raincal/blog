@@ -99,7 +99,7 @@ gulp.task('bundle', gulpSequence(['concat', 'merge'], 'revision', 'revreplace'))
 gulp.task('remove-google-fonts', () => {
   return gulp
     .src('./public/index.html')
-    .pipe(rmLines({ filters: [/<link\shref=\"\/\/fonts.loli.net/i] }))
+    .pipe(rmLines({ filters: [/<link\srel=\"stylesheet\"\shref=\"\/\/fonts.loli.net/i] }))
     .pipe(gulp.dest('./public/temp'))
 })
 

@@ -1,13 +1,13 @@
 sudo: false
 language: node_js
 node_js:
-- '9'
+- '10'
 install:
 - yarn
-- yarn global add hexo-cli gulp
+- yarn global add hexo-cli
 script:
 - git clone git@git.coding.net:raincal/raincal.git .deploy_git
-- hexo g && gulp
+- yarn build
 - hexo d
 - rm -rf ~/.ssh
 branches:
