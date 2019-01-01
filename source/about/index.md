@@ -25,7 +25,6 @@ type: "about"
 #### 持续集成：
 
 - [GitHub Actions](https://github.com/features/actions)
-- [Travis CI](https://travis-ci.org/)
 - [DaoCloud](https://www.daocloud.io/)
 
 #### 图床：[腾讯云COS](https://cloud.tencent.com/product/cos)

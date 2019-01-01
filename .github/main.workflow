@@ -3,12 +3,18 @@ workflow "Hexo Blog" {
   resolves = ["Deploy to Firebase"]
 }
 
-action "[Custom] Build hexo blog" {
-  uses = "./.github/build-custom"
+action "Deploy to Coding" {
+  uses = "./.github/build"
+  secrets = ["CO_TOKEN"]
+  env = {
+    CO_REF = "git.dev.tencent.com/raincal/raincal"
+    CO_USER = "raincal"
+    CO_EMAIL = "cyj228@vip.qq.com"
+  }
 }
 
 action "Deploy to Firebase" {
   uses = "Raincal/actions/deploy-firebase@master"
-  needs = ["[Custom] Build hexo blog"]
+  needs = ["Deploy to Coding"]
   secrets = ["FIREBASE_TOKEN"]
 }
