@@ -1,8 +1,7 @@
 keywords: "Raincal, Blog, React, React-Native, Angular, Elixir"
 
 footer:
-  # Specify the date when the site was setup.
-  # If not defined, current year will be used.
+  # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2015
 
   # Icon between year and copyright info.
@@ -17,7 +16,7 @@ footer:
 
   # If not defined, `author` from Hexo main config will be used.
   copyright:
-  # -------------------------------------------------------------
+
   powered:
     # Hexo link (Powered by Hexo).
     enable: true
@@ -29,18 +28,20 @@ footer:
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
     version: true
-  # -------------------------------------------------------------
 
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
+
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
 seo: true
 
+# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
+baidu_push: true
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # Usage: `Key: /link/ || icon`
-# Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.
+# Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 # External url should start with http:// or https://
@@ -83,12 +84,6 @@ social_icons:
   icons_only: true
   transition: true
 
-  # Follow me on GitHub banner in right-top corner.
-# Usage: `permalink || title`
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the title and aria-label name.
-#github_banner: https://github.com/yourname || Follow me on GitHub
-
 # Blog rolls
 links_icon: link
 links_title: Links
@@ -101,8 +96,8 @@ links:
 
 # Sidebar Avatar
 avatar:
-  # in theme directory(source/images): /images/avatar.gif
-  # in site  directory(source/uploads): /uploads/avatar.gif
+  # In theme directory (source/images): /images/avatar.gif
+  # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
   url: https://cdn-1256167913.image.myqcloud.com/images/avatar.png
   # If true, the avatar would be dispalyed in circle.
@@ -119,7 +114,9 @@ toc:
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: true
-  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` var.
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: false
+  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front Matter.
   max_depth: 6
 
 sidebar:
@@ -129,44 +126,33 @@ sidebar:
 
   # Sidebar Display, available values (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically
+  #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  Totally remove sidebar including sidebar toggle.
+  #  - remove  totally remove sidebar including sidebar toggle.
   display: post
-  #display: always
-  #display: hide
-  #display: remove
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
-  # Back to top in sidebar.
-  b2t: false
-  # Scroll percent label in b2t button.
-  scrollpercent: true
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
+  # Click any blank part of the page to close sidebar (only for Muse | Mist).
+  dimmer: false
 
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: true
+  # Scroll percent label in b2t button.
+  scrollpercent: true
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
   updated_at:
     enabled: false
-    # If true, show updated date label only if `updated date` different from `created date` (post edited in another day than was created).
-    # And if post will edited in same day as created, edited time will show in popup title under created time label.
-    # If false show anyway, but if post edited in same day, show only edited time.
     another_day: true
   categories: true
 
-# Reward
-# If true, reward would be displayed in every article by default.
-# And you can show or hide one article specially through add page variable `reward: true/false`.
-reward:
-  enable: false
-  #comment: 新年快乐 (゜-゜)つロ
-  #wechatpay: https://cdn-1256167913.image.myqcloud.com/images/wechatpay.jpg!200
-  #alipay: https://cdn-1256167913.image.myqcloud.com/images/alipay.jpg!200
-  #bitcoin: /images/bitcoin.png
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -182,21 +168,22 @@ related_posts:
     #isExcerpt: false
 
 # ---------------------------------------------------------------
-# Font Settings
-# - Find fonts on Google Fonts (https://www.google.com/fonts)
-# - All fonts set here will have the following styles:
-#     light, light italic, normal, normal italic, bold, bold italic
-# - Be aware that setting too much fonts will cause site running slowly
-# - Introduce in 5.0.1
+
 # ---------------------------------------------------------------
-# CAUTION! Safari Version 10.1.2 bug: https://github.com/iissnan/hexo-theme-next/issues/1844
-# To avoid space between header and sidebar in Pisces / Gemini themes recommended to use Web Safe fonts for `global` (and `logo`):
+# Font Settings. Introduced in NexT v5.0.1.
+# Find fonts on Google Fonts (https://www.google.com/fonts)
+# All fonts set here will have the following styles:
+#   light, light italic, normal, normal italic, bold, bold italic
+# Be aware that setting too much fonts will cause site running slowly
+# ---------------------------------------------------------------
+# To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `logo`):
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
+
 font:
   enable: true
 
-  # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
+  # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host: //fonts.loli.net
 
   # Font options:
@@ -239,7 +226,13 @@ font:
 
 # ---------------------------------------------------------------
 # Third Party Services Settings
+# See: https://theme-next.org/docs/third-party-services/
+# You may need to install dependencies or set CDN URLs in `vendors`
+# There are two different CDN providers by default:
+#   - jsDelivr (cdn.jsdelivr.net), works everywhere even in China
+#   - CDNJS (cdnjs.cloudflare.com), provided by cloudflare
 # ---------------------------------------------------------------
+
 # Disqusapi
 disqusapi:
   enable: true
@@ -250,29 +243,21 @@ disqusapi:
   badge: '博主'
   timeout: 3000
   count: true
-
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters
-#google_site_verification:
-
 # Google Analytics
-google_analytics: UA-89637345-1
-google_gtag: false
+google_analytics:
+  gtag: false
+  tracking_id: UA-89637345-1
+  localhost_ignored: true
 
 # Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
+# You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
   enable: true
   app_id: xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz
   app_key: TgK8LqquaVhiY6lmrw6U8zcW
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in lc counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
   security: false
   betterPerformance: false
 
-# Show PV/UV of the website/page with busuanzi.
-# Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   enable: false
   total_visitors: false
@@ -285,11 +270,9 @@ busuanzi_count:
   uv_offset: 1230
   pv_offset: 8166
 
-baidu_push: true
-
 google_search:
   enable: true
-  site: https://gog.now.sh
+  site: https://google.com
 
 # Only for Gemini.
 css_doodle:
@@ -314,25 +297,24 @@ motion:
     # Only for Pisces | Gemini.
     sidebar: slideUpIn
 
-  # Fancybox. There is support for old version 2 and new version 3.
-# Choose only any one variant, do not need to install both.
+# Fancybox. There is support for old version 2 and new version 3.
+# Choose only one variant, do not need to install both.
 # To install 2.x: https://github.com/theme-next/theme-next-fancybox
 # To install 3.x: https://github.com/theme-next/theme-next-fancybox3
 fancybox: false
 
-# Added switch option for separated repo in 6.0.0.
+# Polyfill to remove click delays on browsers with touch UIs.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
 fastclick: false
 
-# Added switch option for separated repo in 6.0.0.
+# Vanilla JavaScript plugin for lazyloading images.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
 lazyload: true
 
-# Script Vendors.
-# Set a CDN address for the vendor you want to customize.
+# Script Vendors. Set a CDN address for the vendor you want to customize.
 # For example
-#    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
-# Be aware that you should use the same version as internal ones to avoid potential problems.
+#   jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+# Be aware that you would better use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
 vendors:
   # Internal path prefix. Please do not edit it.

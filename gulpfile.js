@@ -54,12 +54,12 @@ gulp.task('minify', ['minify-html', 'minify-css', 'minify-js'])
 // bundle
 gulp.task('concat', () => {
   const jsFiles = [
-    `${JS_FOLDER}src/utils.js`,
-    `${JS_FOLDER}src/motion.js`,
-    `${JS_FOLDER}src/bootstrap.js`,
-    `${JS_FOLDER}src/affix.js`,
-    `${JS_FOLDER}src/lean-analytics.js`,
-    `${JS_FOLDER}src/schemes/*.js`
+    `${JS_FOLDER}utils.js`,
+    `${JS_FOLDER}motion.js`,
+    `${JS_FOLDER}next-boot.js`,
+    `${JS_FOLDER}affix.js`,
+    `${JS_FOLDER}lean-analytics.js`,
+    `${JS_FOLDER}schemes/*.js`
   ]
   return gulp
     .src(jsFiles)

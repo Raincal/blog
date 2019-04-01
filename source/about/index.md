@@ -19,8 +19,8 @@ type: "about"
 
 #### 托管：
 
-- 国内：[Coding Pages](https://coding.net/pages/)
-- 国外：[Firebase Hosting](https://firebase.google.com/products/hosting/)
+- ~~[Coding Pages](https://coding.net/pages/)~~
+- [Firebase Hosting](https://firebase.google.com/products/hosting/)
 
 #### 持续集成：
 
