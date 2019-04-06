@@ -282,6 +282,7 @@ css_doodle:
 motion:
   enable: true
   async: true
+  velocity: false
   transition:
     # Transition variants:
     # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut

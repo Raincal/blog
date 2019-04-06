@@ -55,7 +55,7 @@ gulp.task('minify', ['minify-html', 'minify-css', 'minify-js'])
 gulp.task('concat', () => {
   const jsFiles = [
     `${JS_FOLDER}utils.js`,
-    `${JS_FOLDER}motion.js`,
+    // `${JS_FOLDER}motion.js`,
     `${JS_FOLDER}next-boot.js`,
     `${JS_FOLDER}affix.js`,
     `${JS_FOLDER}lean-analytics.js`,
