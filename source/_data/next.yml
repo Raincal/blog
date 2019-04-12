@@ -1,18 +1,18 @@
-keywords: "Raincal, Blog, React, React-Native, Angular, Elixir"
+keywords: 'Raincal, Blog, React, React-Native, Angular, Elixir'
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2015
 
   # Icon between year and copyright info.
-  icon: 
+  icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
     name: heart
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#d43f57"
+    color: '#d43f57'
 
   # If not defined, `author` from Hexo main config will be used.
   copyright:
@@ -28,7 +28,6 @@ footer:
     enable: true
     # Version info of NexT after scheme info (vX.X.X).
     version: true
-
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
 seo: true
@@ -55,7 +54,6 @@ menu:
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
   photos: /photos/ || camera-retro
-
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -153,7 +151,6 @@ post_meta:
     another_day: true
   categories: true
 
-
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
@@ -167,7 +164,8 @@ related_posts:
     #isImage: false
     #isExcerpt: false
 
-# ---------------------------------------------------------------
+# Reduce padding / margin indents on devices with narrow width.
+mobile_layout_economy: true
 
 # ---------------------------------------------------------------
 # Font Settings. Introduced in NexT v5.0.1.
@@ -223,7 +221,6 @@ font:
     family:
     size:
 
-
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # See: https://theme-next.org/docs/third-party-services/
@@ -272,7 +269,7 @@ busuanzi_count:
 
 google_search:
   enable: true
-  site: https://google.com
+  site: https://gog.now.sh
 
 # Only for Gemini.
 css_doodle:
@@ -325,7 +322,7 @@ vendors:
 
   fancybox: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js
   fancybox_css: //cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css
-  
+
   fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
 
   lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1.9.7/jquery.lazyload.min.js
