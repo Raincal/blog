@@ -80,15 +80,6 @@ avatar: /images/avatar.png
 sitemap: 
   path: sitemap.xml
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: 
-    coding: git@git.coding.net:raincal/raincal.git
-  branch: 
-    coding: coding-pages
-
 search:
   path: search.xml
   field: post
