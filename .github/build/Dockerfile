@@ -1,4 +1,4 @@
-FROM node:10.15.0
+FROM node:10.16.0
 
 ADD entrypoint.sh /entrypoint.sh
 
