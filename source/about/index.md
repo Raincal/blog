@@ -21,7 +21,7 @@ type: "about"
 
 - ~~[Coding Pages](https://coding.net/pages/)~~
 - ~~[Firebase Hosting](https://firebase.google.com/products/hosting/)~~
-- [ZEIT Now](https://firebase.google.com/products/hosting/)
+- [ZEIT Now](https://zeit.co)
 
 #### 持续集成：
 
