@@ -1,8 +1,0 @@
-footer:
-  powered: false
-
-  theme:
-    # Theme & scheme info link (Theme - NexT.scheme).
-    enable: false
-    # Version info of NexT after scheme info (vX.X.X).
-    version: false

@@ -17,9 +17,3 @@ git commit -m "GitHub Actions 自动部署" && \
 git push --force --quiet $remote_repo master:master && \
 cd ../
 echo "👍 DEPLOY SUCCESS!"
-
-echo "[Custom] Build hexo blog"
-
-cp .custom/_firebase.yml source/_data
-
-yarn build
