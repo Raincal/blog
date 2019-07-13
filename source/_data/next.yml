@@ -1,12 +1,24 @@
 keywords: 'Raincal, Blog, React, React-Native, Angular, Elixir'
-
+# Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2015
 
   # Icon between year and copyright info.
   icon:
-    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
+    # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
     name: heart
     # If you want to animate the icon, set it to true.
@@ -14,7 +26,7 @@ footer:
     # Change the color of icon, using Hex Code.
     color: '#d43f57'
 
-  # If not defined, `author` from Hexo main config will be used.
+  # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
 
   powered:
@@ -38,11 +50,11 @@ baidu_push: true
 # Menu Settings
 # ---------------------------------------------------------------
 
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # Usage: `Key: /link/ || icon`
 # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
-# Value before `||` delimeter is the target link.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+# Value before `||` delimiter is the target link.
+# Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, question icon will be loaded.
+# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
   home: / || home
@@ -68,8 +80,8 @@ scheme: Gemini
 # Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+# Value before `||` delimiter is the target permalink.
+# Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/Raincal || github
   Twitter: https://twitter.com/cyj228 || twitter
@@ -114,15 +126,15 @@ toc:
   wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
-  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front Matter.
+  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front-matter.
   max_depth: 6
 
 sidebar:
-  # Sidebar Position, available values: left | right (only for Pisces | Gemini).
+  # Sidebar Position.
   position: left
   #position: right
 
-  # Sidebar Display, available values (only for Muse | Mist):
+  # Sidebar Display (only for Muse | Mist), available values:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
@@ -133,13 +145,11 @@ sidebar:
   offset: 12
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
-  # Click any blank part of the page to close sidebar (only for Muse | Mist).
-  dimmer: false
 
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: true
 # Post meta display settings
@@ -171,7 +181,7 @@ mobile_layout_economy: true
 # Font Settings. Introduced in NexT v5.0.1.
 # Find fonts on Google Fonts (https://www.google.com/fonts)
 # All fonts set here will have the following styles:
-#   light, light italic, normal, normal italic, bold, bold italic
+#   light | light italic | normal | normal italic | bold | bold italic
 # Be aware that setting too much fonts will cause site running slowly
 # ---------------------------------------------------------------
 # To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `logo`):
@@ -221,6 +231,7 @@ font:
     family:
     size:
 
+
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # See: https://theme-next.org/docs/third-party-services/
@@ -268,7 +279,7 @@ busuanzi_count:
   pv_offset: 8166
 
 google_search:
-  enable: true
+  enable: false
   site: https://gog.now.sh
 
 # Only for Gemini.
@@ -306,12 +317,10 @@ fancybox: false
 fastclick: false
 
 # Vanilla JavaScript plugin for lazyloading images.
-# Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
-lazyload: true
+# Dependencies: https://github.com/theme-next/theme-next-lazyload
+lazyload: false
 
 # Script Vendors. Set a CDN address for the vendor you want to customize.
-# For example
-#   jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 # Be aware that you would better use the same version as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
 vendors:
@@ -325,7 +334,7 @@ vendors:
 
   fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
 
-  lazyload: //cdn.jsdelivr.net/npm/jquery-lazyload@1.9.7/jquery.lazyload.min.js
+  lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
 
   velocity: //cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js
 

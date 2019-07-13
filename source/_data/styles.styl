@@ -1,0 +1,86 @@
+// Custom styles.
+#comments {
+  margin-top: 12px;
+  position: relative;
+  a {
+    border: none;
+  }
+}
+
+img.emojione {
+  display: inline-block;
+}
+
++mobile() {
+  .post-copyright {
+    font-size: 14px;
+  }
+}
+
+.headband { display: none; }
+
+// .no-doodle-support {
+//   background: $gainsboro;
+
+//   css-doodle {
+//     display: none;
+//   }
+
+//   .back-to-top, .sidebar, {
+//     background: $gainsboro;
+//   }
+// }
+
+// .doodle-support {
+//   .post-block, .header-inner, .sidebar-inner, .comments {
+//     opacity: .9 !important;
+//   }
+
+//   .header {
+//     z-index: 1;
+//   }
+
+//   .footer a {
+//     color: white;
+//     opacity: .9;
+//   }
+
+//   .back-to-top {
+//     color: rgba(white, .8);
+//   }
+// }
+
+@keyframes slideUpIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+if (hexo-config('motion.enable')) {
+  .menu, .brand {
+    opacity: 0;
+    animation: slideDownIn 350ms 0ms $mdc-animation-deceleration-curve-timing-function forwards;
+  }
+  .post-block, .sidebar-inner, .pagination, .comments {
+    opacity: 0;
+    animation: slideUpIn 350ms 0ms $mdc-animation-deceleration-curve-timing-function forwards;
+  }
+}
