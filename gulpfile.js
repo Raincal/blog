@@ -7,7 +7,6 @@ const swig         = require('gulp-swig')
 const data         = require('gulp-data')
 const uglify       = require('gulp-uglify')
 const useref       = require('gulp-useref')
-const concat       = require('gulp-concat')
 const htmlmin      = require('gulp-htmlmin')
 const rmLines      = require('gulp-rm-lines')
 const replace      = require('gulp-url-replace')
@@ -17,12 +16,12 @@ const fontSpider   = require('gulp-font-spider')
 const revReplace   = require('gulp-rev-replace')
 const revdel       = require('gulp-rev-delete-original')
 
-const JS_FOLDER = './public/js/'
+const JS_FOLDER = 'public/js/'
 
 // minify
 gulp.task('minify-html', () => {
   return gulp
-    .src('./public/**/*.html')
+    .src('public/**/*.html')
     .pipe(htmlclean())
     .pipe(
       htmlmin({
@@ -32,46 +31,31 @@ gulp.task('minify-html', () => {
         minifyURLs: true
       })
     )
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('public'))
 })
 
 gulp.task('minify-css', () => {
   return gulp
-    .src('./public/**/*.css')
+    .src('public/**/*.css')
     .pipe(csso())
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('public'))
 })
 
 gulp.task('minify-js', () => {
   return gulp
-    .src(['./public/**/*.js', '!./public/**/*.min.js'])
+    .src(['public/**/*.js', '!public/**/*.min.js'])
     .pipe(uglify())
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('public'))
 })
 
-gulp.task('minify', ['minify-html', 'minify-css', 'minify-js'])
+gulp.task('minify', ['minify-html', 'minify-css'])
 
 // bundle
-gulp.task('concat', () => {
-  const jsFiles = [
-    `${JS_FOLDER}utils.js`,
-    // `${JS_FOLDER}motion.js`,
-    `${JS_FOLDER}next-boot.js`,
-    `${JS_FOLDER}affix.js`,
-    `${JS_FOLDER}lean-analytics.js`,
-    `${JS_FOLDER}schemes/*.js`
-  ]
+gulp.task('useref', () => {
   return gulp
-    .src(jsFiles)
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest(JS_FOLDER))
-})
-
-gulp.task('merge', () => {
-  return gulp
-    .src('./public/**/*.html')
+    .src('public/*.html')
     .pipe(useref())
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('public'))
 })
 
 gulp.task('revision', () => {
@@ -88,24 +72,24 @@ gulp.task('revreplace', () => {
   const manifest = gulp.src(JS_FOLDER + 'rev-manifest.json')
 
   return gulp
-    .src('./public/**/*.html')
+    .src('public/**/*.html')
     .pipe(revReplace({ manifest: manifest })) // 修改HTML中的bundle.js名称
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('public'))
 })
 
-gulp.task('bundle', gulpSequence(['concat', 'merge'], 'revision', 'revreplace'))
+gulp.task('bundle', gulpSequence('useref', 'revision', 'revreplace'))
 
 // font spider
 gulp.task('remove-google-fonts', () => {
   return gulp
-    .src('./public/index.html')
+    .src('public/index.html')
     .pipe(rmLines({ filters: [/<link\srel=\"stylesheet\"\shref=\"\/\/fonts.loli.net/i] }))
-    .pipe(gulp.dest('./public/temp'))
+    .pipe(gulp.dest('public/temp'))
 })
 
 gulp.task('replace-url', () => {
   return gulp
-    .src(['./public/temp/index.html'])
+    .src(['public/temp/index.html'])
     .pipe(
       replace({
         'href="//': 'href="https://',
@@ -113,11 +97,11 @@ gulp.task('replace-url', () => {
         'href="/css': 'href="../css'
       })
     )
-    .pipe(gulp.dest('./public/temp'))
+    .pipe(gulp.dest('public/temp'))
 })
 
 gulp.task('fontspider', () => {
-  return gulp.src('./public/temp/*.html').pipe(fontSpider())
+  return gulp.src('public/temp/*.html').pipe(fontSpider())
 })
 
 gulp.task('gen-html', () => {
@@ -129,7 +113,7 @@ gulp.task('gen-html', () => {
     {% endfor %}
     `
 
-  fs.writeFile('./public/temp/temp.html', tpl, err => {
+  fs.writeFile('public/temp/temp.html', tpl, err => {
     if (err) throw err
     console.log('temp.html created!')
   })
@@ -146,14 +130,14 @@ gulp.task('inject-data', ['gen-html'], () => {
     ]
   }
   return gulp
-    .src('./public/temp/temp.html')
+    .src('public/temp/temp.html')
     .pipe(
       data(() => {
         return icons
       })
     )
     .pipe(swig())
-    .pipe(gulp.dest('./public/temp'))
+    .pipe(gulp.dest('public/temp'))
 })
 
 gulp.task(
@@ -167,7 +151,7 @@ gulp.task(
 )
 
 gulp.task('clean', () => {
-  del(['./public/temp', `${JS_FOLDER}rev-manifest.json`])
+  del(['public/temp', `${JS_FOLDER}rev-manifest.json`])
 })
 
 gulp.task('default', gulpSequence('bundle', 'fs', 'minify', 'clean'))

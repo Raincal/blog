@@ -73,14 +73,3 @@ img.emojione {
     opacity: 1;
   }
 }
-
-if (hexo-config('motion.enable')) {
-  .menu, .brand {
-    opacity: 0;
-    animation: slideDownIn 350ms 0ms $mdc-animation-deceleration-curve-timing-function forwards;
-  }
-  .post-block, .sidebar-inner, .pagination, .comments {
-    opacity: 0;
-    animation: slideUpIn 350ms 0ms $mdc-animation-deceleration-curve-timing-function forwards;
-  }
-}
